@@ -1,0 +1,25 @@
+﻿
+> animesh-ray-portfolio@1.0.0 build
+> tsc -b && vite build
+
+src/components/Character/Scene.tsx(52,10): error TS6133: 'loaded' is declared but its value is never read.
+src/components/ChatbotFab.tsx(2,27): error TS6133: 'FiX' is declared but its value is never read.
+src/components/Hero.tsx(1,21): error TS6133: 'useRef' is declared but its value is never read.
+src/components/TechStack.tsx(3,34): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/components/TechStack.tsx(4,29): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/components/TechStack.tsx(5,38): error TS2307: Cannot find module '@react-three/postprocessing' or its corresponding type declarations.
+src/components/TechStack.tsx(12,8): error TS2307: Cannot find module '@react-three/rapier' or its corresponding type declarations.
+src/components/TechStack.tsx(50,13): error TS7006: Parameter '_state' implicitly has an 'any' type.
+src/components/TechStack.tsx(50,21): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/components/TechStack.tsx(82,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/components/TechStack.tsx(102,15): error TS7031: Binding element 'pointer' implicitly has an 'any' type.
+src/components/TechStack.tsx(102,24): error TS7031: Binding element 'viewport' implicitly has an 'any' type.
+src/components/TechStack.tsx(177,21): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/components/TechStack.tsx(180,9): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/components/TechStack.tsx(181,9): error TS2339: Property 'spotLight' does not exist on type 'JSX.IntrinsicElements'.
+src/components/TechStack.tsx(189,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/components/utils/initialFX.ts(1,27): error TS7016: Could not find a declaration file for module 'gsap-trial/SplitText'. 'D:/Antigravity/p/node_modules/gsap-trial/SplitText.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/gsap-trial` if it exists or add a new declaration (.d.ts) file containing `declare module 'gsap-trial/SplitText';`
+src/components/utils/initialFX.ts(3,10): error TS2614: Module '"../Navbar"' has no exported member 'smoother'. Did you mean to use 'import smoother from "../Navbar"' instead?
+src/components/utils/splitText.ts(4,27): error TS7016: Could not find a declaration file for module 'gsap-trial/SplitText'. 'D:/Antigravity/p/node_modules/gsap-trial/SplitText.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/gsap-trial` if it exists or add a new declaration (.d.ts) file containing `declare module 'gsap-trial/SplitText';`

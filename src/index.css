@@ -214,15 +214,22 @@ img {
 }
 
 .navbar-logo {
-  font-family: var(--font-primary);
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   cursor: pointer;
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  height: 64px;
+  width: auto;
+  mix-blend-mode: lighten;
+  filter: brightness(1);
+  transition: var(--transition-smooth);
+}
+
+.navbar-logo:hover .navbar-logo-img {
+  filter: brightness(1.15) drop-shadow(0 0 8px rgba(0, 212, 255, 0.6));
+  transform: scale(1.05);
 }
 
 .navbar-links {

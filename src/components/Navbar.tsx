@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="container">
         <div className="navbar-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          {'<AR />'}
+          <img src="/logo.png" alt="Animesh Ray Logo" className="navbar-logo-img" />
         </div>
 
         <button
