@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { useRef, useMemo, useState, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, RootState } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import {
@@ -47,7 +47,7 @@ function SphereGeo({
 }: SphereProps) {
   const api = useRef<RapierRigidBody | null>(null);
 
-  useFrame((_state, delta) => {
+  useFrame((_state: RootState, delta: number) => {
     if (!isActive) return;
     delta = Math.min(0.1, delta);
     const impulse = vec
@@ -99,7 +99,7 @@ type PointerProps = {
 function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
   const ref = useRef<RapierRigidBody>(null);
 
-  useFrame(({ pointer, viewport }) => {
+  useFrame(({ pointer, viewport }: RootState) => {
     if (!isActive) return;
     const targetVec = vec.lerp(
       new THREE.Vector3(
@@ -174,7 +174,7 @@ const TechStack = () => {
         shadows
         gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
         camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
-        onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
+        onCreated={(state: RootState) => (state.gl.toneMappingExposure = 1.5)}
         className="tech-canvas"
       >
         <ambientLight intensity={1} />

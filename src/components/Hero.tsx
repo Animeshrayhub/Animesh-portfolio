@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, lazy, Suspense } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { FiArrowDown, FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const CharacterScene = lazy(() => import('./Character/Scene'));

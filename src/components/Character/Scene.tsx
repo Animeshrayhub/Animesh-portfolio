@@ -49,7 +49,7 @@ const createBoneAction = (
 const CharacterScene = () => {
   const canvasDiv = useRef<HTMLDivElement | null>(null);
   const hoverDivRef = useRef<HTMLDivElement>(null);
-  const [loaded, setLoaded] = useState(false);
+  const [_loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     if (!canvasDiv.current) return;

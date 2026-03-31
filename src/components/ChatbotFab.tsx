@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiMessageSquare, FiX } from 'react-icons/fi';
+import { FiMessageSquare } from 'react-icons/fi';
 
 const ChatbotFab = () => {
   const [showTooltip, setShowTooltip] = useState(true);
